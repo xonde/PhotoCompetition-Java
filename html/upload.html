@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Essential meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Softwire Web Development Training Example">
+    <meta name="author" content="Softwire">
+
+    <!-- Title -->
+    <title>Photo Competition - Upload Image</title>
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../stylesheets/vendor/normalize.css">
+    <link rel="stylesheet" href="../stylesheets/vendor/skeleton.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../stylesheets/common.css">
+
+    <!-- Vendor JS -->
+    <script src="../js/vendor/jquery-3.3.1.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/common.js"></script>
+    <script src="../js/upload.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar-spacer"></div>
+<nav class="navbar">
+    <div class="container">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="upload.html">Upload Image</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="winner.html">Winner</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Page content -->
+<div class="container">
+
+    <!-- Title -->
+    <div class="row">
+        <h1 class="page-title">Upload Image</h1>
+    </div>
+
+    <!-- Javascript warning -->
+    <noscript>
+        <div class="row">
+            <div class="banner banner-warning">This website requires Javascript</div>
+        </div>
+    </noscript>
+
+    <!-- Success and failure banners -->
+    <div class="row">
+        <div class="banner banner-success banner-hidden" id="banner-image-upload-success">Successfully uploaded image</div>
+    </div>
+    <div class="row">
+        <div class="banner banner-warning banner-hidden" id="banner-image-upload-failure">
+            Failed to upload image: <span id="banner-image-upload-failure-detail"></span>
+        </div>
+    </div>
+
+    <!-- Image uploading form -->
+    <form id="image-upload-form">
+        <div class="row">
+            <label for="author-input">Author name</label>
+            <input class="u-full-width" placeholder="Monet" id="author-input" type="text" required>
+        </div>
+        <div class="row">
+                <label for="name-input">Image name</label>
+                <input class="u-full-width" placeholder="Water Lillies" id="name-input" type="text" required>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label for="license-input">License</label>
+                <select class="u-full-width" id="license-input" required>
+                    <option value="" selected disabled>Please select a license</option>
+                    <option value="CC_BY">CC-BY</option>
+                    <option value="CC_BY_SA">CC-BY-SA</option>
+                    <option value="CC_BY_ND">CC-BY-ND</option>
+                </select>
+            </div>
+            <div class="four columns">
+                <label for="file-input">Image</label>
+                <input type="file" class="u-full-width" id="file-input" accept="image/jpeg,image/png" required>
+            </div>
+            <div class="four columns">
+                <label for="submit-button" style="visibility: hidden;">Placeholder</label>
+                <input type="submit" class="button-primary u-full-width" value="Upload Image" id="submit-button"/>
+            </div>
+        </div>
+    </form>
+
+    <!-- License info -->
+    <div class="row">
+        <h3>Licenses:</h3>
+        <p>
+            We only use images which are free for <b>commercial use</b>.
+            For example, the following licenses are fine:
+        </p>
+        <ul>
+            <li>
+                <a href="https://creativecommons.org/licenses/by-sa/4.0">
+                    <b>CC BY</b> Creative Commons Attribution (any version)
+                </a>
+            </li>
+            <li>
+                <a href="https://creativecommons.org/licenses/by/4.0">
+                    <b>CC BY-SA</b> Creative Commons Attribution-ShareAlike (any version)
+                </a>
+            </li>
+            <li>
+                <a href="https://creativecommons.org/licenses/by-nd/4.0">
+                    <b>CC BY-ND</b> Creative Commons  Attribution-NoDerivatives  (any version)
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

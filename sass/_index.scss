@@ -1,0 +1,21 @@
+@import "common.scss";
+
+button.love-button {
+  background-color: $green;
+  border-color: $green;
+  &:hover {
+    $darker-green: darken($green, 10%);
+    background-color: $darker-green;
+    border-color: $darker-green;
+  }
+}
+
+button.hate-button {
+  background-color: $red;
+  border-color: $red;
+  &:hover {
+    $darker-red: darken($red, 10%);
+    background-color: $darker-red;
+    border-color: $darker-red;
+  }
+}

@@ -8,7 +8,7 @@
     <meta name="author" content="Softwire">
 
     <!-- Title -->
-    <title>Photo Competition - Home</title>
+    <title>Photo Competition - Winner</title>
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -25,12 +25,14 @@
 
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/winner.js"></script>
+
 </head>
 
 <body>
 
 <!-- Navigation bar -->
+<div class="navbar-spacer"></div>
 <nav class="navbar">
     <div class="container">
         <ul class="navbar-list">
@@ -46,45 +48,29 @@
 <div class="container">
 
     <div class="row">
-        <h1 class="page-title">Photo Competition</h1>
+        <h1 class="page-title">Winner</h1>
     </div>
 
-    <!-- Javascript warning -->
-    <noscript>
-        <div class="row">
-            <div class="banner banner-warning">This website requires Javascript</div>
-        </div>
-    </noscript>
-
     <div class="row">
-        <!-- src and alt attribute will be populated by index.js on page load -->
+        <!-- src and alt attributes will be populated by winner.js -->
         <img id="main-image" class="u-full-width" src="">
-    </div>
-
-    <div class="row">
-        <div class="three columns">
-            <button class="button-primary u-full-width love-button" onClick="onClickVoteUp()">I love it</button>
-        </div>
-        <div class="three columns u-pull-right">
-            <button class="button-primary u-full-width hate-button" onClick="onClickVoteDown()">I hate it</button>
-        </div>
     </div>
 
     <!-- Picture details will be populated by index.js on page load -->
     <table class="u-full-width">
         <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td><span id="span-author-name"></span></td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td><span id="span-image-name"></span></td>
-            </tr>
-            <tr>
-                <td><b>License</b></td>
-                <td><a id="a-license"></a></td>
-            </tr>
+        <tr>
+            <td><b>Author</b></td>
+            <td><span id="span-author-name"></span></td>
+        </tr>
+        <tr>
+            <td><b>Name</b></td>
+            <td><span id="span-image-name"></span></td>
+        </tr>
+        <tr>
+            <td><b>License</b></td>
+            <td><a id="a-license"></a></td>
+        </tr>
         </tbody>
     </table>
 </div>
