@@ -1,24 +1,24 @@
 'use strict';
-// JavaScript source file for use with the index page.
+// JavaScript for use with the index page.
 
 function loadRandomImage() {
-    fetch(buildUrl("/random"))
+    fetch(buildUrl('/random'))
         .then(function (response) {
             if (response.status !== 200) {
-                throw new Error("Request return status code !== 200: " + response.status + " - ")
+                throw new Error('Request return status code !== 200: ' + response.status + ' - ')
             }
             return response.json();
         })
         .then(function (json) {
-            console.log("Request to /random succeeded: ");
+            console.log('Request to /random succeeded: ');
             console.log(json);
 
-            var mainImage = $("#main-image");
+            var mainImage = $('#main-image');
             mainImage.attr('src', json.url);
-            mainImage.attr('alt', "Photo Competition image, " + json.name);
+            mainImage.attr('alt', 'Photo Competition image, ' + json.name);
         })
         .catch(function (err) {
-            console.log("Request to /top failed: " + err);
+            console.error('Request to /random failed: ', err);
         });
 }
 

@@ -1,24 +1,16 @@
-.container {
+// Import partials
+@import 'index';
+@import 'navbar';
+
+// Global styling
+
+body {
+  margin: 0;
+}
+
+.main-content {
+  width: 100%;
   max-width: 800px;
-}
-
-/**
- * Navigation bar
- */
-
-.navbar-list {
-  list-style: none;
-  margin-bottom: 0;
-}
-
-.navbar-link {
-  float: right;
-}
-
-.navbar-title {
-  float: left;
-}
-
-.navbar {
-  margin-bottom: 3rem;
+  margin: 0 auto;
+  padding: 0 24px;
 }

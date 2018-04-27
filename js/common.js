@@ -1,9 +1,9 @@
 'use strict';
-// JavaScript source file containing shared constants, for use in all pages.
+// JavaScript containing shared constants, for use in all pages.
 
-var backendIp = "34.245.255.176";
-var token = "fa28372d-44ee-4202-964f-485d41c7c7fd";
+var backendIp = 'backend IP goes here';
+var token = 'your token goes here';
 
 function buildUrl(path) {
-    return "http://" + backendIp + "/images" + path + "?token=" + token;
+    return 'http://' + backendIp + '/images' + path + '?token=' + token;
 }
