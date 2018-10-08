@@ -1,11 +1,15 @@
 // Import partials
 @import 'index';
 @import 'navbar';
-
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 // Global styling
 
 body {
   margin: 0;
+  height: 100vh;
+  //background-image: linear-gradient(rgb(95, 195, 255), rgba(255,0,0,0));
+  font-family:'Oswald', sans-serif;
 }
 
 .main-content {
@@ -13,4 +17,34 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
+}
+
+.page-title{
+  text-align: center;
+}
+.horizontal-gray{
+  list-style-type: none;
+  margin: 0;
+  //border: 1px solid black;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Raleway', sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ff7e00;//#ff7e00
+  color: black;
 }

@@ -16,6 +16,7 @@ function loadRandomImage() {
             var mainImage = $('#main-image');
             mainImage.attr('src', json.url);
             mainImage.attr('alt', 'Photo Competition image, ' + json.name);
+            mainImage.attr('name', json.name);
         })
         .catch(function (err) {
             console.error('Request to /random failed: ', err);
