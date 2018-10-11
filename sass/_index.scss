@@ -6,12 +6,124 @@
 
 .voting-buttons {
   display: flex;
-  justify-content: center;
-  padding: 8px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  //padding: 8px;
+  //align-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+
+  .left-button-section{
+    width: 25%;
+  }
+
+  .centre-button-section{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
+  .right-button-section{
+    width: 25%;
+  }
+
+
 
   .voting-button {
+    padding: 8px 20px;
+    margin: 0 0px;
+    font-family: "Calibri Light", sans-serif;
+    border: none;
+    //background-color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    width: 400px;
+    background-image: linear-gradient(white,white);
+    //background-size: 100%;
+    z-index: 100;
+    position: relative;
+    transition: color 0.5s;
+
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////////
+  .vote-up{
+    text-align: left;
+  }
+
+  .vote-up:before{
+    background-image: linear-gradient(to right, rgba(255, 125, 0, 0.69), rgba(255, 0, 0, 0));
+    content: '';
+    z-index: -100;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .vote-up:hover:before{
+    opacity: 1;
+  }
+  .vote-up:hover{
+    color: white;
+  }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+  .vote-down{
+    text-align: right;
+  }
+
+  .vote-down:before{
+    background-image: linear-gradient(to left, rgba(255, 78, 0, 0.69), rgba(255, 0, 0, 0));
+    content: '';
+    z-index: -100;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .vote-down:hover:before{
+    opacity: 1;
+  }
+
+  .vote-down:hover{
+   color: white;
+  }
+
+  ///////////////////////////////////////////////////////////////////////////////////////////
+
+  .refresh-button{
+    text-align: center;
     padding: 8px;
-    margin: 0 8px;
+    margin: 0 0px;
+    font-family: "Calibri Light", sans-serif;
+    border: none;
+    background-color: inherit;
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: color 0.5s, background-color 0.5s;
+    color: #ff7e00;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+
+  .refresh-button:hover{
+    background-color: black;
+    color: white;
   }
 }
 

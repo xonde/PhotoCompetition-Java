@@ -27,42 +27,56 @@
 
     <ul class="horizontal-gray">
         <li><a href="index.html">Photo Competition</a></li>
+        <li><a href="topRatedPhotos.html">Top Photos</a></li>
         <li style="float:right"><a href="about.html">About</a></li>
     </ul>
 
 
 <!-- Page content -->
+<h1 class="page-title">
+    PHOTO COMPETITION
+</h1>
 <div class="main-content">
-    <h1 class="page-title">
-        PHOTO COMPETITION
-    </h1>
 
-    <div class="image-container">
-        <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
+    <div class="main-left"></div>
+
+    <div class="expander">
+
+        <div class="main-centre">
+            <div class="image-container">
+                <!-- src and alt attribute will be populated by index.js on page load -->
+                <img id="main-image" src="">
+            </div>
+
+        </div>
+
+        <div class="main-right">
+            <p id = "image-name" class="name"></p>
+            <p id = "image-author" class="author"></p>
+            <p id = "image-license" class="license"></p>
+
+            <br>
+            <br>
+
+            <p class="score-title">SCORE</p>
+            <p id = "image-score" class="score"></p>
+        </div>
+
     </div>
 
-    <div class="voting-buttons">
-        <button class="voting-button vote-up">I love it</button>
-        <button class="voting-button vote-down">I hate it</button>
+</div>
+
+<div class="voting-buttons">
+
+    <div class="left-button-section"></div>
+
+    <div class="centre-button-section">
+        <button class="voting-button vote-up" onclick="voteUp()">LIKE</button>
+        <a class="refresh-button" href="index.html">↻</a>
+        <button class="voting-button vote-down" onclick="voteDown()">DISLIKE</button>
     </div>
 
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td>TODO: Fill in author details.</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td>TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td>TODO: Fill in licence details.</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="right-button-section"></div>
 </div>
 
 </body>

@@ -1,18 +1,29 @@
 // Partial for the Nav Bar
 
-.navbar {
-  background-color: #DDDDDD;
-  height: 64px;
+.horizontal-gray{
+  list-style-type: none;
+  margin: 0;
+  //border: 1px solid black;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  font-family: 'Raleway', sans-serif;
 }
 
-.navbar-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+li {
+  float: left;
+}
 
-  height: 100%;
-  margin: 0;
-  padding: 0;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+}
 
-  list-style: none;
+li a:hover {
+  background-color: #ff7e00;//#ff7e00
+  color: black;
 }
